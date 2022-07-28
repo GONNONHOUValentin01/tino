@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'acceille.dart';
+
 var mavaleur;
 
 class page2 extends StatelessWidget {
@@ -7,14 +8,16 @@ class page2 extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(appBar:
-    AppBar(title:
-     Text("interface de connexion"),
-     
-     ),
-     body: 
-     Column (children: [
-       Text('Se connecter'
+    return Scaffold(
+        appBar: AppBar(
+          title: Text("interface de connexion"),
+        ),
+        body: Padding(
+          padding: const EdgeInsets.all(150.0),
+          child: 
+          
+          Column (children: [
+       Text('Se connecter',style: TextStyle(fontSize:40.0 ),
        ),
        SizedBox(
          height: 15.0,
@@ -23,6 +26,7 @@ class page2 extends StatelessWidget {
        TextField(
          decoration: InputDecoration(hintText:
           "Entrez un email",
+          border: OutlineInputBorder(),
            label:
           Text('email'),
            ),
@@ -37,6 +41,8 @@ class page2 extends StatelessWidget {
        TextField(
          decoration: InputDecoration(hintText:
           "Entrez un mot de passe",
+
+          border: OutlineInputBorder(),
            label:
           Text('mot de passe'),
            ),
@@ -49,13 +55,19 @@ class page2 extends StatelessWidget {
         (BuildContext context)=> acc()
         )
         );
-        }, child: Text('Se connecter'),
+        }, child: Text('Se connecter',style:
+         TextStyle(fontSize:25.0 ),
+          ),
        ),
 
 
 
 
      ]),
-     );
+          
+          
+          
+          ),
+          );
   }
 }
