@@ -22,7 +22,8 @@ class page1 extends StatelessWidget {
      onTap: (){
        Navigator.push(context, MaterialPageRoute(builder: (BuildContext context )=>page2()));
      },
-     leading: Icon(Icons.login,color: Colors.green,),),
+     leading: Icon(Icons.login,color: Colors.green,
+     )     ),
      ListTile( title: Text("S'inscrire"),
      leading: Icon(Icons.account_box,color: Colors.blue,),)
      ],
