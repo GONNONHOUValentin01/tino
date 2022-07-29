@@ -8,8 +8,14 @@ class page1 extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(appBar:AppBar(title: Text("ma page")),
     drawer:Drawer(child: ListView(children:
-     [ListTile( title: Text("Menus de connexion"),
-     leading: Icon(Icons.menu),),
+     [ListTile( title: Text("Menus de connexion ",
+     style: TextStyle(color: Colors.white),
+     ),
+     leading: Icon(Icons.menu,color: Colors.white,
+     ),
+     
+     tileColor: Colors.blue,
+     ),
      ListTile( title: Text("Favoris",style: TextStyle(color: Colors.blue),),
      ),
      ListTile( title: Text("Se connecter"),
